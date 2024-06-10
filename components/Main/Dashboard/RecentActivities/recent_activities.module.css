@@ -27,13 +27,7 @@
     margin: 0 auto;
     min-width: auto;
     border-radius: 16px;
-  }
-}
-
-@media (max-width: 420px) {
-  .recent_activities {
-    max-width: 290px;
+    max-width: none;
     overflow-x: scroll;
   }
-
 }
