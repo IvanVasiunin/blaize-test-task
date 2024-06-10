@@ -57,7 +57,8 @@
 
 @media (max-width: 768px) {
   .activity_row {
-    grid-template-columns: 34px 107px 90px 122px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 8px;
   }
 
   .activity_row__name {
@@ -83,5 +84,11 @@
   .activity_row__time {
     font-size: 12px;
     line-height: 12px;
+  }
+}
+
+@media (max-width: 420px) {
+  .activity_row {
+    grid-template-columns: 34px 107px 90px 122px;
   }
 }

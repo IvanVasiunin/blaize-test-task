@@ -23,7 +23,7 @@
 @media (max-width: 768px) {
   .recent_activities {
     padding: 24px 15px;
-    width: max-content;
+    width: 100%;
     margin: 0 auto;
     min-width: auto;
     border-radius: 16px;
