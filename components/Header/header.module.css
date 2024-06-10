@@ -1,0 +1,166 @@
+.header {
+  display:grid;
+  justify-content: space-between;
+  padding: 38px 76px;
+  background: 
+    linear-gradient(to top,  rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%),
+    rgb(18, 19, 29);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.logo_link {
+  grid-area: 1;
+}
+
+.logo_container {
+  display: flex;
+  align-items: center;
+  gap: 21px;
+  grid-area: 1;
+}
+
+.logo {
+  width: 52.72px;
+  height: 58px;
+}
+
+.logoName {
+  width: 108.19px;
+  height: 25.31px;
+}
+
+.buttons_container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  grid-area: 1;
+}
+
+.buttons_container__tvl_and_select {
+  grid-area: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.buttons_container__tvl div:first-child {
+  font-weight: 400;
+}
+
+.buttons_container__tvl div:last-child {
+  font-weight: 600;
+}
+
+.buttons_container__tvl {
+  display: none;
+}
+
+.wallet_button {
+  background: 
+    radial-gradient(circle at 5% 110%, #FF6F4F 0%, rgba(255, 1, 221, 0) 40px),
+    linear-gradient(25deg, #FF01DD 18%, rgba(255, 1, 221, 0) 51%),
+    radial-gradient(ellipse at 15% 0%, #5C5CFF 0%, rgba(92, 92, 255, 0) 60%),
+    radial-gradient(ellipse at 50% 50%, #14E1E2 0%, rgba(30, 208, 244, 0) 40px),
+    linear-gradient(90deg, #41B7FF, #41B7FF),
+    linear-gradient(90deg, rgba(255, 1, 221, 0) 20%, rgba(125, 92, 255, 0) 45%),
+    linear-gradient(90deg, rgba(125, 92, 255, 0) 45%, rgba(92, 92, 255, 0) 55%),
+    linear-gradient(90deg, rgba(92, 92, 255, 0) 55%, #41B7FF 100%)!important;
+}
+
+.buttons_mob__bg {
+  background: linear-gradient(to right, #41B7FF 0%, #00FF73 100%);
+  padding: 1px;
+  border-radius: 40px;
+  width: 200px;
+  height: 54px;
+  align-self: center;
+  justify-self: end;
+  display: none;
+}
+
+.connect_button__mob {
+  width: 100%;
+}
+
+@media (max-width: 1199px) {
+  .header {
+    padding: 30px 40px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .buttons_mob__bg {
+    display: flex;
+  }
+
+  .header {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 80px 60px;
+  }
+
+  .logo_link {
+    grid-area: 1 / 2;
+    align-self: center;
+  }
+
+  .logo_container {
+    justify-content: center;
+  }
+
+  .buttons_container {
+    grid-area: 2 / span 3;
+  }
+
+  .buttons_container__tvl_and_select {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+  .buttons_container__tvl {
+    display: flex;
+    width: max-content;
+    font-size: 16px;
+    line-height: 16px;
+    color: #FDFCFC;
+    gap: 8px;
+  }
+
+  .wallet_button {
+    display: none!important;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 0;
+  }
+
+  .logo_container {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .logo {
+    width: 29px;
+    height: 32px;
+    margin: 0!important;
+  }
+
+  .logoName {
+    width: 52px;
+    height: 12px;
+  }
+
+  .buttons_mob__bg {
+    margin-right: 15px;
+    width: 75px;
+    height: 28px;
+  }
+
+  .buttons_container__tvl_and_select {
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 0 15px;
+    justify-content: space-between;
+  }
+}

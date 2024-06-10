@@ -1,0 +1,80 @@
+.customTooltip {
+  display: flex;
+  align-items: center;
+  background-color: #13141D;
+  border-radius: 20px!important;
+  padding: 10px;
+  color: #FDFCFC;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  max-height: 46px;
+}
+
+.icon {
+  width: 18px;
+  height: 18px;
+  margin-right: 7px;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  margin-right: 14px;
+  gap: 2px;
+}
+
+.title {
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 500;
+  color: #FDFCFC;
+}
+
+.network {
+  font-size: 12px;
+  line-height: 12px;
+  color: rgba(255, 255, 255, 0.25);
+}
+
+.value {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #FDFCFC;
+}
+
+@media (max-width: 768px) {
+  .customTooltip {
+    flex-wrap: wrap;
+    gap: 5px;
+    max-height: fit-content;
+    max-width: 160px;
+  }
+
+  .value {
+    order: 1;
+    flex-basis: 100%;
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .icon {
+    order: 2;
+  }
+
+  .title {
+    font-size: 10px;
+    line-height: 10px;
+  }
+
+  .network {
+    font-size: 10px;
+    line-height: 10px;
+  }
+
+  .textContainer {
+    order: 3;
+    flex-direction: row!important;
+    gap: 3px;
+    margin: 0;
+  }
+}

@@ -1,0 +1,37 @@
+body {
+  background: url(../assets/background.jpg)#12131D!important;
+}
+
+.custom-tooltip {
+  background: #13141D;
+  border: 1px solid #393A41;
+  border-radius: 5px;
+  padding: 10px;
+  color: #FDFCFC;
+}
+
+.recharts-tooltip-cursor {
+  display: none;
+}
+
+* {
+  font-family: '__Space_Grotesk_587f35', '__Space_Grotesk_Fallback_587f35'!important;
+}
+
+.purple {
+  background: linear-gradient(90deg, #FF01DD 0%, #41B7FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.pink {
+  background: linear-gradient(90deg, #FF6F4F 0%, #FF01DD 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.green {
+  background: linear-gradient(90deg, #41B7FF 0%, #00FF73 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

@@ -1,0 +1,87 @@
+.activity_row {
+  display: grid;
+  align-items: start;
+  grid-template-columns: 40px 124px 104px auto;
+}
+
+.activity_row__img {
+  justify-self: center;
+}
+
+.activity_row__name_and_network {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.activity_row__name {
+  font-size: 16px;
+  line-height: 16px;
+  color: #FFF;
+}
+
+.activity_row__network {
+  font-size: 14px;
+  line-height: 14px;
+  color: #4E4F56;
+}
+
+.activity_row__value {
+  font-size: 16px;
+  line-height: 16px;
+  color: #FFF;
+}
+
+.activity_row__additional {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.activity_row__info {
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.activity_row__time {
+  font-size: 14px;
+  line-height: 14px;
+  color: #4E4F56;
+}
+
+@media (max-width: 1799px) {
+  .activity_row {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .activity_row {
+    grid-template-columns: 34px 107px 90px 122px;
+  }
+
+  .activity_row__name {
+    font-size: 14px;
+    line-height: 14px;
+  }
+  
+  .activity_row__network {
+    font-size: 12px;
+    line-height: 12px;
+  }
+  
+  .activity_row__value {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .activity_row__info {
+    font-size: 14px;
+    line-height: 14px;
+  }
+  
+  .activity_row__time {
+    font-size: 12px;
+    line-height: 12px;
+  }
+}

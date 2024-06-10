@@ -1,0 +1,52 @@
+.selectContainer {
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.menuButton {
+  width: 100%;
+  min-width: 184px;
+  border: 1px solid #3182ce;
+  padding: 15px 20px;
+  max-height: 54px;
+}
+
+.menuButton span {
+  text-align: left;
+}
+
+.menuList {
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+}
+
+.menuItem {
+  padding: 0.5rem 1rem;
+  transition: background-color 0.2s;
+}
+
+.menuItem:hover {
+  background-color: #e2e8f0;
+}
+
+@media (max-width: 1023px) {
+  .selectContainer {
+    margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .selectContainer {
+    max-width: 127px;
+  }
+  .menuButton {
+    min-width: 127px!important;
+    max-height: 40px;
+  }
+
+  .menuButton svg {
+    width: 14px;
+    height: 14px;
+  }
+}

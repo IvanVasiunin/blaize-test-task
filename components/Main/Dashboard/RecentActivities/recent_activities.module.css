@@ -1,0 +1,39 @@
+.recent_activities {
+  background: #1A202C;
+  border-radius: 24px;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  max-height: 587px;
+  min-width: 450px;
+}
+
+.recent_activities__h2 {
+  color: #FDFCFC;
+  margin-bottom: 30px;
+}
+
+.recent_activities__container {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  list-style-type: none;
+}
+
+@media (max-width: 768px) {
+  .recent_activities {
+    padding: 24px 15px;
+    width: max-content;
+    margin: 0 auto;
+    min-width: auto;
+    border-radius: 16px;
+  }
+}
+
+@media (max-width: 420px) {
+  .recent_activities {
+    max-width: 290px;
+    overflow-x: scroll;
+  }
+
+}
