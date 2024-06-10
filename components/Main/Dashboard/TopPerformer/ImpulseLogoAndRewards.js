@@ -75,6 +75,9 @@ export default function ImpulseLogoAndRewards() {
             fontsize: "13px",
             lineHeight: "13px",
             color: "#FDFCFC",
+            _hover: {
+              background: 'rgb(35, 36, 44)'
+            }
           }}
         >
           Claim rewards
