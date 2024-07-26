@@ -6,6 +6,10 @@ This repository contains a test task for Blaize. The project is built using HTML
     <img src="https://github.com/IvanVasiunin/blaize-test-task/blob/main/assets/app_UI.jpg" alt="UI_snapshot" />
 </div>
 
+## Demo
+
+<a href="https://blaize-test-task.vercel.app/">Check demo here</a>
+
 ## Table of Contents
 
 - [Usage](#usage)
